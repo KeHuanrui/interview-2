@@ -88,3 +88,5 @@ Commit Message 请参考阮一峰老师教程中的规范来书写，参考地�
 ```
 http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 ```
+
+NOTE: 请候选人一定要注意规范化，职业化，请严格按照题目要求来作答，感谢配合。
