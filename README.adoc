@@ -80,3 +80,11 @@ https://review.gerrithub.io/#/admin/projects/lifei/interview-1
 === 编码规范
 
 代码必须符合 PEP8 规范，可忽略一下几项：`--ignore=W293,E402,E501,E251`。
+
+=== Commit Message 规范
+
+Commit Message 请参考阮一峰老师教程中的规范来书写，参考地址：
+
+```
+http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
+```
