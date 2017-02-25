@@ -30,6 +30,7 @@ Android 研发部 -> 客户端研发部 -> 研发部 -> 公司
 |====
 | 字段 | 含义
 | id | 主键
+| name | 权限名称
 | resource_id | 资源 ID
 | action | 操作
 |====
@@ -37,7 +38,7 @@ Android 研发部 -> 客户端研发部 -> 研发部 -> 公司
 1. 请设计关系型数据库表结构实现『为某个部门赋予权限』的需求。
 2. 编写代码实现：给定员工和资源，查询其所具有该资源的权限列表。
 
-三、假设部门（Department）表上有 Leader 字段，示例如下：
+三、假设部门（Department）表上有领导（Leader）字段，示例如下：
 
 .部门表
 [cols="2", width="50%", frame="topbot", options="header"]
@@ -56,15 +57,41 @@ Android 研发部 -> 客户端研发部 -> 研发部 -> 公司
 
 == 答题要求
 
+=== 关于题目
+
+==== 语言
+
+本题目非常简单，现实中很多应届生从来没有接触过 Python 花三天时间就可以完成作答，对于一名优秀的工程师语言从来都不是门槛。
+
+此外，我们正在搭建 Golang 版本的答题系统。
+
+==== 流程
+
+整个答题过程实际上是日常开发的简化版，所以请不要以『不熟悉 Gerrit Code Review 工作流』等借口来拒绝使用 Gerrit 作答。
+
+==== 标准
+
+请以你日常工作中最高的标准来完成编码，包括但不限于边界检查、防御式编程、异常处理、抽象与封装等。职业化也是考察的一个方面。
+
 === 答题流程
 
-请使用 Gerrit 工作流完成答题过程，Git 仓库地址：
+请使用我们专门为答题准备的 Gerrit Code Review 系统footnote:[https://www.gerritcodereview.com/]完成答题过程，Git 仓库地址：
 
 ```
-https://review.gerrithub.io/#/admin/projects/lifei/interview-1
+git clone https://ee.bytedance.net/interview/gerrit/interview-1
 ```
 
-请通过 GerritHub 提交 Code Review。提交的结果可以完成完整的测试。
+请提交 Code Review 到你的 ${username} 分支。提交的结果可以完成完整的测试。
+
+[NOTE]
+====
+. 本 Gerrit Web 界面地址： https://ee.bytedance.net/interview/gerrit/
+. 本 Gerrit 使用 GitHub OAuth2.0 认证登录，登录后用户名为你在 GitHub 的用户名。
+. 本 Gerrit 仅支持 **HTTPS** 协议。
+. 本 Gerrit 仅能看到 master 分支和『以自己用户名同名的分支』，请先在 Web 界面创建以『自己用户名同名的分支』： https://ee.bytedance.net/interview/gerrit/#/admin/projects/interview-1,branches。
+====
+
+NOTE: Gerrit 的教程请参考：link::https://ee.bytedance.net/interview/gerrit/Documentation/intro-user.html[]
 
 === 字段命名规范
 
